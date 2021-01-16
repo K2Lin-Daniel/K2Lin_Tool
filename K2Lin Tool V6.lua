@@ -1,23 +1,23 @@
 --------------------		[[ K2LINGROUP Universal No-Recoil Script ]]			--------------------
 ------------------------------------------------		Settings			--------------------------------------------------
 local Master    = true				------ Masterswitch status defaults to at script start.   		[ true = on, false = off ]	Default = off
-local debug = true 					------ See Extra Function Details. 															Default = false
-local masterswitch = 13				------ Button to toggle main switch, set it to 13 to disable it								Default = 7	
-local modeswitch = 11				------ Button to switch modes																Default = 9			
-local Recoil = true 				------ This is what the recoil defaults to at script start.   	[ true = on, false = off ]	Default = off
-local Automatic = false				------ This is what the rapid-fire defaults to at script start.	[ true = on, false = off ]	Default = off
-local Y_level = 1					------ Vertical move per step. 																Default = 1(=<0 to work)
-local Delay = 21 					------ Default delay on startup. 															Default = 1			
-local mode_change_button = 10 		------ Button to cycle the config															Default = 8					
-local mode_change_enabled = true	-- This allows you switch between configs													Default = true
-local mode_selected = 1 			------ Default config selected upon loading the script										Default = 1
-local rapid_Y_level = 10			------ Rapid-Fire Recoil Settings 															Default = 4-10
-local rapid_delay = 50				------ Rapid-Fire Delay Settings (standing alone)											Default = 10-20
-local rapid_firerate = 200			------ Rapid-Fire Click Speed (Lower = Faster) changeable in config							Default = 100-800
-local ReleseDate = "2020 01 14"		------ Type whatever you want
-local show_controls = true
+local debug = true 				------ See Extra Function Details. 									Default = false
+local masterswitch = 13				------ Button to toggle main switch, set it to 13 to disable it						Default = 7	
+local modeswitch = 11				------ Button to switch modes										Default = 9			
+local Recoil = true 				------ This is what the recoil defaults to at script start.   		[ true = on, false = off ]	Default = off
+local Automatic = false				------ This is what the rapid-fire defaults to at script start.		[ true = on, false = off ]	Default = off
+local Y_level = 1				------ Vertical move per step. 										Default = 1(=<0 to work)
+local Delay = 21 				------ Default delay on startup. 									Default = 1			
+local mode_change_button = 10 			------ Button to cycle the config									Default = 8					
+local mode_change_enabled = true		------ This allows you switch between configs								Default = true
+local mode_selected = 1 			------ Default config selected upon loading the script							Default = 1
+local rapid_Y_level = 10			------ Rapid-Fire Recoil Settings 									Default = 4-10
+local rapid_delay = 50				------ Rapid-Fire Delay Settings (standing alone)							Default = 10-20
+local rapid_firerate = 200			------ Rapid-Fire Click Speed (Lower = Faster) changeable in config					Default = 100-800
+local ReleseDate = "2020 01 14"			------ Type whatever you want										Default = A date
+local show_controls = true			------ Not working?(WIP func)
 ------------------------------------------------	Anti-Recoil CONFIG		--------------------------------------------------
-local mode_1_name = "Chick" 		------ Set custom names for each config you are running
+local mode_1_name = "Chick" 			------ Set custom names for each config you are running
 local mode_1_default_delay = 26
 local mode_2_name = "Strong"
 local mode_2_default_delay = 20
@@ -49,7 +49,7 @@ local mode_rapid_6_name = "OTG-41-Fast"
 local mode_rapid_6_default_delay = 200
 local mode_rapid_6_default_Y_level = 6
 ------------------------------------------------		Main Module			--------------------------------------------------
---										DONT TOUCH IF U DONT KNOW WHAT THEY'RE DOING!!!										--
+--						DONT TOUCH IF U DONT KNOW WHAT THEY'RE DOING!!!							--
 local Mode      = "Recoil"
 local Stat      = "False"
 local time
@@ -116,12 +116,12 @@ function OnEvent(event, arg)
 		EnablePrimaryMouseButtonEvents(true)
 		ClearLog()	
 		print"its working"
-		OutputLogMessage("[[________________________________________________________]]\n")
+		OutputLogMessage("[[________________________________________________________\n")
 		OutputLogMessage("                                                              \n")
 		OutputLogMessage("     K2LINTECH - Universal Multi Function Anti-Recoil Script     \n")
 		OutputLogMessage("     Made by K2LinN Aka Daniel24971                                          \n")  
 		OutputLogMessage("     Function works in many FPS games!                                                      ")
-		OutputLogMessage("\n[[________________________________________________________]]\n")
+		OutputLogMessage("\n[[________________________________________________________\n")
 		OutputLogMessage("\n")
 		Sleep(1000)
 		OutputLogMessage("Loading Modules     ")
@@ -186,11 +186,11 @@ function OnEvent(event, arg)
 		log()
 		end
 
-power = math.floor(((1)/(Delay)) * (10^3) + 0.5)/(10^3)
+	power = math.floor(((1)/(Delay)) * (10^3) + 0.5)/(10^3)
  
 	if(not IsMouseButtonPressed(4)) then
-		firing (0,Y_level,Delay) --Calls macro function
-		log()-- Calls the log every event
+		firing (0,Y_level,Delay) --Calls function
+		log()
 		if (event == "MOUSE_BUTTON_PRESSED") then
 			OutputLogMessage("You pressed Mouse-G")
 			OutputLogMessage(arg)
