@@ -7,5 +7,5 @@ Comes with 6 config slots
 
 As you know,This Lua script is for control those annoying recoil. 
 
-It is recommended that you read the notes in the configuration file before using it, and then rebind the buttons. To use the quick fire function, you need to hold down G5 and the RMB.
+It is recommended that you read the notes in the configuration file before using it, and then rebind the buttons. To use the rapid fire function, you need to hold down G5 and the RMB.
 Runs well on my laptop with GHUB and Logitech G502 Hero Mouse
