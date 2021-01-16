@@ -353,9 +353,9 @@ function firing(a,b,rsleep)
 		if IsMouseButtonPressed(3) then
 			if(IsMouseButtonPressed(5)) then
 				if(autotag) then
-					PressButton(tagbutton)
+					PressKey(tagbutton)
 					Sleep(math.random(5,25))
-					ReleaseButton(tagbutton)
+					ReleaseKey(tagbutton)
 					Sleep(math.random(5,25))
 					end
 				repeat
