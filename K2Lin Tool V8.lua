@@ -15,6 +15,8 @@ local rapid_Y_level = 10			------ Rapid-Fire Recoil Settings 									Default = 
 local rapid_delay = 50				------ Rapid-Fire Delay Settings (standing alone)							Default = 10-20
 local rapid_firerate = 200			------ Rapid-Fire Click Speed (Lower = Faster) changeable in config					Default = 100-800
 local rapid_button = 5				------ Button that activates Rapid fire function(Press with RMB)					Default = 5
+local autotag = true				------ Auto spot enemies when you're firing			[ true = on, false = off ]	Default = true
+local tagbutton = "z"				------ "Spot" key in game									Default = z
 local ReleseDate = "2020 02 12"			------ Type whatever you want										Default = A date
 local show_controls = true			------ Not working?(WIP func)
 ------------------------------------------------	Anti-Recoil CONFIG		--------------------------------------------------
@@ -279,6 +281,12 @@ function firing(a,b,rsleep)
 				repeat
 					Recoil_Step1 = math.random(1,2)
 					if (Recoil == true) then
+					if(autotag) then
+					PressKey(tagbutton)
+					Sleep(math.random(5,25))
+					ReleaseKey(tagbutton)
+					Sleep(math.random(5,25))
+					end
 						time = GetRunningTime()
 							if(Delay >= 3)then
 							if(Recoil_Step == 1)then
@@ -352,6 +360,12 @@ function firing(a,b,rsleep)
 					Recoil_Step1 = math.random(1,2)
 					if (Automatic == true) then
 					PressMouseButton(1)
+					if(autotag) then
+					PressKey(tagbutton)
+					Sleep(math.random(5,25))
+					ReleaseKey(tagbutton)
+					Sleep(math.random(5,25))
+					end
 						time = GetRunningTime()
 							if(Delay >= 3)then
 							if(Recoil_Step == 1)then
