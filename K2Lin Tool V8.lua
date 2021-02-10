@@ -15,6 +15,7 @@ local rapid_Y_level = 10			------ Rapid-Fire Recoil Settings 									Default = 
 local rapid_delay = 50				------ Rapid-Fire Delay Settings (standing alone)							Default = 10-20
 local rapid_firerate = 200			------ Rapid-Fire Click Speed (Lower = Faster) changeable in config					Default = 100-800
 local rapid_button = 5				------ Button that activates Rapid fire function(Press with RMB)					Default = 5
+local reset_button = 9				------ Button that will reset config slot to #1								Default = 9
 local autotag = true				------ Auto spot enemies when you're firing			[ true = on, false = off ]		Default = true
 local tagbutton = "z"				------ "Spot" key in game										Default = z
 local ReleseDate = "2020 02 12"			------ Type whatever you want										Default = A date
@@ -186,6 +187,14 @@ function OnEvent(event, arg)
 
 	if (event == "MOUSE_BUTTON_PRESSED" and arg == mode_change_button) then
 		mode("change")
+		log()
+		end
+		
+	if (event == "MOUSE_BUTTON_PRESSED" and arg == reset_button) then
+		mode_selected = 1
+    	Delay = mode_1_default_delay
+		rapid_Y_level = mode_rapid_1_default_Y_level
+		rapid_firerate = mode_rapid_1_default_delay
 		log()
 		end
 
