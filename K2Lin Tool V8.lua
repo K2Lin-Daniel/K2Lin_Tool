@@ -354,7 +354,7 @@ function firing(a,b,rsleep)
 						end
 						ClearLog()
 						OutputLogMessage("Function Cycle runs in : ")
-						OutputLogMessage(timer+rapid_firerate)
+						OutputLogMessage(timer)
 						OutputLogMessage(" millisecond(s)\n")
 					end
 				until (not IsMouseButtonPressed(1) or not IsMouseButtonPressed(3))
