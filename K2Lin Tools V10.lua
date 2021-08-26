@@ -15,12 +15,12 @@ local rapid_Y_level = 10			------ Rapid-Fire Recoil Settings 									Default = 
 local rapid_delay = 50				------ Rapid-Fire Delay Settings (standing alone)							Default = 10-20
 local rapid_firerate = 200			------ Rapid-Fire Click Speed (Lower = Faster) changeable in config					Default = 100-800
 local rapid_button = 1				------ Button that activates Rapid fire function(Press with RMB)					Default = 5
-local reset_button = 9				------ Button that will reset config slot to #1										Default = 9
+local autofirekey = 82				------ Binds to your in-game Secondary Fire Key to use autofire func					Default = 82 (Scan code)
+local reset_button = 9				------ Button that will reset config slot to #1								Default = 9
 local autotag = false				------ Auto spot enemies when you're firing			[ true = on, false = off ]		Default = true
 local tagbutton = "z"				------ "Spot" key in game										Default = z
-local ReleseDate = "2020 02 12"			------ Type whatever you want										Default = A date
+local ReleseDate = "2021/8/26"			------ Type whatever you want										Default = A date
 local show_controls = true			------ Not working?(WIP func)
-local autofirekey = 82				------ Binds to your in-game Secondary Fire Key to use autofire func		Default = 82 (Scan code)
 ------------------------------------------------	Anti-Recoil CONFIG		--------------------------------------------------
 local mode_1_name = "Chick" 			------ Set custom names for each config you are running
 local mode_1_default_delay = 30
