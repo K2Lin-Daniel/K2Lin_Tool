@@ -7,10 +7,9 @@ Comes with 6 config slots
 
 As you know,This Lua script is for control those annoying recoil.
 
-It is recommended that you read the notes in the configuration file before using it, and then rebind the buttons. To use the rapid fire function, you need to hold down G5 and the RMB. Runs well on my laptop with GHUB and Logitech G502 Hero Mouse
+It is recommended that you read the notes in the configuration file before using it
 
-Anyone is very welcome to make suggestions or point out problems sharply））, :). Maybe I saw it that day and I will revise it
-
-Reminder: The manager of this project is a lazy person（XD. Most of your requests will have to wait half a month to be discovered.
+There are still many areas for improvement in this script. If you want to modify it, please use Pull Requests!
+Everything works well on my R9 5950X and RTX 3080Ti gaming rig. The keys are originally set for G502, and everything can be changed.
 
 [](https://img.shields.io/github/issues/K2Lin-Daniel/K2Lin_Tool)
