@@ -21,7 +21,7 @@ local autotag = false				------ Auto spot enemies when you're firing			[ true = 
 local tagbutton = "z"				------ "Spot" key in game										Default = z
 local ReleseDate = "2021/8/26"			------ Type whatever you want										Default = A date
 local show_controls = true			------ Not working?(WIP func)
-------------------------------------------------	Anti-Recoil CONFIG		--------------------------------------------------
+------------------------------------------------	Anti-Recoil CONFIG			--------------------------------------------------
 local mode_1_name = "Chick" 			------ Set custom names for each config you are running
 local mode_1_default_delay = 30
 local mode_2_name = "Strong"
@@ -34,7 +34,7 @@ local mode_5_name = "Lord"
 local mode_5_default_delay = 8
 local mode_6_name = "Tachanka"
 local mode_6_default_delay = 2
-------------------------------------------------	Rapid-Fire CONFIG		--------------------------------------------------
+------------------------------------------------	Rapid-Fire CONFIG			--------------------------------------------------
 local mode_rapid_1_name = "AutoFire-Slow"
 local mode_rapid_1_default_delay = 20		------ Rapid-Fire Click Speed (Lower = Faster)
 local mode_rapid_1_default_Y_level = 1
